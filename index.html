@@ -1180,18 +1180,18 @@
             <h2>Детали мероприятия</h2>
             <div class="detail-grid">
                 <div class="detail-card">
-                    <h3>15:30</h3>
+                    <h3>15:20</h3>
                     <p>Сбор гостей</p>
                     <!-- <p>Сбор гостей в 15:20</p> -->
                 </div>
                 <div class="detail-card">
                     <h3>15:30</h3>
                     <!-- <p>Ресторан "Белый Лебедь"</p> -->
-                    <p>Фотосессия молодоженов</p>
+                    <p>Фотосессия c молодоженами</p>
                 </div>
                 <div class="detail-card">
                     <h3>16:00</h3>
-                    <p>Банкет - Кафе "Гора" - 16:00</p>
+                    <p>Банкет - Кафе "Гора"</p>
                     <!-- <p>16:00</p> -->
                 </div>
                 <div class="detail-card">
@@ -1223,7 +1223,7 @@
                         <div class="wish-icon">💐</div>
                         <div class="wish-content">
                             <span class="wish-title">Не дарите нам цветы</span>
-                            <span class="wish-description">Они завянут, а мы хотим, чтобы ваша доброта осталась с нами навсегда</span>
+                            <span class="wish-description">Мы расстроимся, когда не сможем забрать их с собой, вместо цветов приносите бутылочку любимого крепкого напитка или ликёра, который отражает Вас для нашего семейного бара.</span>
                         </div>
                     </div>
                     
@@ -1231,7 +1231,7 @@
                         <div class="wish-icon">🎁</div>
                         <div class="wish-content">
                             <span class="wish-title">Лучший подарок</span>
-                            <span class="wish-description">Ваш вклад в наше совместное будущее в конверте</span>
+                            <span class="wish-description">Ваши пожелания в конвертах помгут осуществить наши мечты.</span>
                         </div>
                     </div>
                     
@@ -1253,7 +1253,7 @@
     <section class="rsvp">
         <div class="container">
             <h2>Подтвердите присутствие</h2>
-            <p>Пожалуйста, ответьте до 15 Июля 2026 года</p>
+            <p>Пожалуйста, ответьте до 1 апреля 2026 года</p>
             
             <div id="notification" class="notification"></div>
             
@@ -1326,15 +1326,15 @@
     <script>
         // Конфиг телеграм (сохранён из исходного кода)
         const TELEGRAM_CONFIG = {
-            BOT_TOKEN: '8372798819:AAHKqwertzIMt1u1Cxjwp0FN4dLQH-4gp94',
+            BOT_TOKEN: '8372798819:AAHKqwertzIMt1uxjwp0FN4dLQH-4gp94',
             CHAT_ID: '-1003413243717'
         };
 
         // Календарь
         class WeddingCalendar {
             constructor() {
-                this.currentDate = new Date(2026, 7, 1); // Август 2026 (месяцы 0-11)
-                this.weddingDate = new Date(2026, 7, 1);
+                this.currentDate = new Date(2026, 7, 22); // Август 2026 (месяцы 0-11)
+                this.weddingDate = new Date(2026, 7, 22);
                 this.init();
             }
 
@@ -1402,7 +1402,7 @@
 
         // Таймер
         function updateCountdown() {
-            const weddingDate = new Date('2026-08-01T09:00:00').getTime();
+            const weddingDate = new Date('2026-08-22T09:00:00').getTime();
             const now = new Date().getTime();
             const distance = weddingDate - now;
 
